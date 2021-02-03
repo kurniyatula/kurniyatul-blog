@@ -1,0 +1,275 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*========================================================================*/
+/* ==================================================*/
+
+body {
+	font-family: arial, verdana, sans-serif;
+	font-size: 14px;
+	line-height: 28px;
+	color: #333333;
+	background-color:darksalmon;
+}
+
+.wadah {
+	width: 800px;
+	height: 100%;
+	margin: auto;
+	background-color: moccasin;
+}
+
+.wadah .header {
+	padding: 20px;
+	padding-bottom: 10px;
+}
+
+.wadah .header .judulblog {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.wadah .gambarheader {
+	height: 250px;
+	background-image: url("../Gambar/header.jpg");
+	border-top: 3px solid orangered;
+	border-bottom: 3px solid lightsalmon;
+}
+
+.wadah .gambarheader img {
+	display: block;
+}
+
+.wadah .topnav {
+	background-color: #f4a460;
+	width: 100%;
+	height: 50px;
+	border-bottom: 3px solid lightsalmon;
+}
+
+.wadah .topnav ul {
+	padding: 0;
+	margin: 0;
+}
+
+.wadah .topnav ul li {
+	display: block;
+	float: left;
+	list-style-type: none;
+}
+
+.wadah .topnav ul li a:link {
+	display: block;
+	min-width: 140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	color: firebrick;
+}
+
+.wadah .topnav ul li a:hover {
+	color: orangered;
+	background-color: sienna;
+}
+
+.wadah .topnav ul li a:visited {
+	color: firebrick;
+}
+
+
+.clear {
+	clear: both;
+}
+
+.wadah .isi .sidebar {
+	background-color: moccasin;
+	float: left;
+	width: 26%;
+	height: 100%;
+	padding: 8px;
+	/*padding-top: 20px;*/
+}
+
+.wadah .isi .sidebar ul {
+	list-style: none;
+  	padding-left: 5px;
+}
+
+.wadah .isi .sidebar .judulsidebar {
+	font-size: 14px;
+	font-weight: bold;
+	background-color: darksalmon;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.wadah .isi .sidebar ul li a:link {
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	color: blue;
+}
+
+.wadah .isi .sidebar ul li a:hover {
+	color: blue;
+}
+
+.wadah .isi .sidebar ul li a:visited {
+	color: blue;
+}
+
+.wadah .isi .konten .artikel {
+	background-color: lemonchiffon;
+	text-align: justify;
+	width: 70%;
+	height: 100%;
+	float: right;
+	padding: 8px;
+	padding-top: 20px;
+	margin: 0 auto 25px;
+}
+
+.wadah .isi .konten .artikel h1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.wadah .isi .konten .artikel h5 {
+	font-size: 11px;
+	color: orangered;
+}
+
+.wadah .isi .konten .artikel img{
+	display: block;
+	height: 200px;
+	margin-right: 10px;
+	float: left;
+}
+
+.wadah .isi .konten .artikel p {
+	line-height: 24px;
+	padding-bottom: 10px;
+}
+
+.wadah .isi .konten .artikel .tebal {
+	font-weight: bold;
+}
+
+.wadah .footer {
+	background-color: #333333;
+	color: #eaeaea;
+	text-align: center;
+	padding: 10px;
+}
+
+@media screen and (max-width: 760px) {
+	.wadah {
+		width: 90%;
+		margin: 25px auto;
+	}
+
+	.wadah .header {
+		position: inherit;
+	}
+	
+	.wadah .header .judulblog {
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.wadah .topnav ul {
+		width: 100%;
+		border-bottom: 3px solid lightsalmon;
+	}
+
+	.wadah .topnav ul {
+		float: inherit;
+	}
+	.wadah .topnav ul li {
+		float: inherit;
+		margin: 0;
+		background-color: #f4a460;
+		border-bottom: 1px solid orangered;
+	}
+
+	.wadah .topnav ul li a:link {
+		font-size: 14px;
+		color: firebrick;
+	}
+
+	.wadah .isi {
+		width: 90%;
+	}
+
+	.wadah .isi .konten {
+		margin-top: 200px;
+	}
+
+	.wadah .isi .konten .artikel{
+		float: inherit;
+		margin: 0 auto 25px;
+		width: 91%;
+		padding: 10%;
+		
+		background-color: lemonchiffon;
+		text-align: justify;
+	}
+
+	.wadah .isi .konten .artikel img{
+		height: 200px;
+		display: block;
+		float: inherit;
+    	margin-left: auto;
+    	margin-right: auto;
+    	margin-bottom: 20px;
+	}
+	.wadah .isi .sidebar {
+		display: none;
+	}
+
+	body {
+		font-size: 14px;
+	}
+}
